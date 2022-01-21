@@ -91,6 +91,8 @@ a{
     background: url("wp3244135.jpg") center/cover;
     position: relative;
     z-index: 1;
+    overflow: hidden;
+    animation: hue 10s infinite alternate;
 }
 
 .blurred-wrapper::after{
@@ -102,4 +104,51 @@ a{
     top: 0;
     left: 0;
     z-index: -1;
+    filter: blur(1.1rem);
+    transform: scale(1.12);
+}
+
+@keyframes hue {
+    from{
+        filter: hue-rotate(0);
+    }
+    to{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.main-header{
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.logo{
+    font-size: 2.6rem;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn{
+    padding: 1 rem 2.5rem;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 2.5rem;
+}
+
+.btn-sign-up{
+    color:white
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 12rem);
 }
