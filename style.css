@@ -121,6 +121,7 @@ a{
     height: 12rem;
     display: flex;
     align-items: center;
+    /* Alttaki satir mywallet ve sign up arasındaki boslugu birakir */
     justify-content: space-between;
 }
 
@@ -135,6 +136,12 @@ a{
     color: white;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.kalin{
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 3rem;
 }
 
 .btn{
