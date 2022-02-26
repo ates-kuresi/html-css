@@ -63,6 +63,9 @@
     right: 0;
 }
 
+.underline{
+
+}
 .btn-1:active::after{
     border-width: 3px;
 }
@@ -76,6 +79,7 @@ html{
     font-size: 85%;
 }
 body{
+    display: flex;
     font-size: 1.6rem;
     font-family: sans-serif;
     color: white;
@@ -158,4 +162,9 @@ a{
     display: flex;
     align-items: center;
     height: calc(100vh - 12rem);
+}
+
+.underline{
+    color: white;
+    
 }
